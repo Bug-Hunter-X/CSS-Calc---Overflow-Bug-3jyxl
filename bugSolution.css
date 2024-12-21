@@ -1,0 +1,11 @@
+To fix this, use the `box-sizing` property:
+
+```css
+div {
+  width: calc(100% - 20px);
+  padding: 10px;
+  box-sizing: border-box;
+}
+```
+
+By setting `box-sizing: border-box;`, the padding is included within the element's total width, preventing overflow.  This ensures that the calculated width correctly accounts for padding.
